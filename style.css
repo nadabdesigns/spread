@@ -1,5 +1,89 @@
 body {
-	max-width: 900px;
+	font-family: "Cormorant Garamond";
+	font-size: 1.25rem;
+	line-height: 2.2rem;
+	max-width: 600px;
 	margin: auto;
-	padding:10%;
+	padding-top: 5%;
 }
+
+header {
+	font-family: "salo-variable";
+	font-variation-settings: "opsz" 1;
+}
+
+h1 {
+	font-size: 6rem;
+	margin-bottom: 1.5rem;
+	line-height: normal;
+}
+
+h2 {
+	font-size: 1.9rem;
+	margin-bottom: 1rem;
+	line-height: normal;
+}
+
+h2 {
+	/* font-weight: bold; */
+	font-size: 2rem;
+}
+
+.author {
+	font-size: 1.4rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+p {
+	margin-bottom: 1.5rem;
+	font-size: 1.25rem;
+}
+
+.article-title {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+blockquote {
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+footer {
+	margin: auto;
+	max-width: 600px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* MEDIA QUERIES */
+
+/* ALL RULES THAT APPLY WHEN SCREEN IS LARGER THAN 1050PX */
+@media screen and (min-width: 700px) {
+	#design {
+		font-size: 12rem;
+		margin-bottom: -1.5rem;
+	}
+	#thinking {
+		font-size: 11rem;
+		padding-left: 9rem;
+		margin-bottom: 1.5rem;
+	}
+	h2 {
+		font-size: 3.6rem;
+		margin-bottom: 0.5rem;
+	}
+	h3 {
+		font-size: 1.4rem;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+	}
+}
+
