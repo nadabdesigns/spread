@@ -1,10 +1,157 @@
+.parentBox{
+width: 100vw;
+display: flex;
+flex-wrap:wrap;
+z-index: -1;
+position: absolute;
+
+}
+.box{
+background-color: rgb(255, 255, 255);
+height: 10vw;
+width: 10vw;
+
+}
 body {
+	z-index: 0;
+	position: relative;
+	background-color: rgb(0, 0, 0);
+	mix-blend-mode: difference;
+
+}
+.parentBox :nth-child(8){
+	background-color: black;
+}
+.parentBox :nth-child(9){
+	background-color: black;
+}
+.parentBox :nth-child(10){
+	background-color: black;
+}
+.parentBox :nth-child(19){
+	background-color: black;
+}
+.parentBox :nth-child(20){
+	background-color: black;
+}
+.parentBox :nth-child(30){
+	background-color: black;
+}
+.parentBox :nth-child(40){
+	background-color: black;
+}
+.parentBox :nth-child(41){
+	background-color: black;
+}
+.parentBox :nth-child(50){
+	background-color: black;
+}
+.parentBox :nth-child(101){
+	background-color: black;
+}
+.parentBox :nth-child(99){
+	background-color: black;
+}
+.parentBox :nth-child(97){
+	background-color: black;
+}
+.parentBox :nth-child(100){
+	background-color: black;
+}
+.parentBox :nth-child(108){
+	background-color: black;
+}
+.parentBox :nth-child(110){
+	background-color: black;
+}
+.parentBox :nth-child(111){
+	background-color: black;
+}
+.parentBox :nth-child(120){
+	background-color: black;
+}
+
+.parentBox :nth-child(121){
+	background-color: black;
+}
+.parentBox :nth-child(131){
+	background-color: black;
+}
+.parentBox :nth-child(130){
+	background-color: black;
+}
+.parentBox :nth-child(140){
+	background-color: black;
+}
+.parentBox :nth-child(149){
+	background-color: black;
+}
+.parentBox :nth-child(150){
+	background-color: black;
+}
+.parentBox :nth-child(151){
+	background-color: black;
+}
+.parentBox :nth-child(218){
+	background-color: black;
+}
+.parentBox :nth-child(219){
+	background-color: black;
+}
+.parentBox :nth-child(227){
+	background-color: black;
+}
+.parentBox :nth-child(230){
+	background-color: black;
+}
+.parentBox :nth-child(330){
+	background-color: black;
+}
+.parentBox :nth-child(331){
+	background-color: black;
+}
+.parentBox :nth-child(341){
+	background-color: black;
+}
+.parentBox :nth-child(342){
+	background-color: black;
+}
+.parentBox :nth-child(351){
+	background-color: black;
+}
+.parentBox :nth-child(352){
+	background-color: black;
+}
+.parentBox :nth-child(361){
+	background-color: black;
+}
+.parentBox :nth-child(350){
+	background-color: black;
+}
+.parentBox :nth-child(360){
+	background-color: black;
+}
+.parentBox :nth-child(369){
+	background-color: black;
+}
+.parentBox :nth-child(370){
+	background-color: black;
+}
+.parentBox :nth-child(380){
+	background-color: black;
+}
+.parentBox :nth-child(378){
+	background-color: black;
+}
+
+.body {
 	font-family: "Cormorant Garamond";
 	font-size: 1.25rem;
 	line-height: 2.2rem;
 	max-width: 600px;
 	margin: auto;
 	padding-top: 5%;
+	/* background-color: white; */
 }
 
 header {
@@ -39,8 +186,12 @@ h3 {
 }
 
 p {
+	/* color: rgb(255, 255, 255); */
 	margin-bottom: 1.5rem;
 	font-size: 1.25rem;
+	mix-blend-mode: difference;/* text-shadow: 1px 1px 1px rgb(255, 255, 255);  */
+	color: white;
+
 }
 
 .article-title {
@@ -64,6 +215,7 @@ footer {
 /* MEDIA QUERIES */
 
 /* ALL RULES THAT APPLY WHEN SCREEN IS LARGER THAN 1050PX */
+/* if it's smaller than the amount of pixels then we will apply changes */
 @media screen and (min-width: 700px) {
 	#design {
 		font-size: 12rem;
@@ -82,8 +234,9 @@ footer {
 		font-size: 1.4rem;
 	}
 	header {
-		display: flex;
+		/* display: flex; */
 		justify-content: center;
 	}
 }
+
 
