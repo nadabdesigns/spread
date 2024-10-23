@@ -110,6 +110,9 @@ body {
 .parentBox :nth-child(151){
 	background-color: black;
 }
+
+/* FLEXBOX FOR SECOND ARTICLE */
+
 .parentBox :nth-child(218){
 	background-color: black;
 }
@@ -215,7 +218,7 @@ p {
 }
 
 .last-article {
-	background-color: white;
+	/* background-color: white; */
 }
 
 .article-title {
@@ -290,6 +293,13 @@ footer {
 	footer {
 		padding-left: 10%;
 		padding-right: 10%;
+		background-color: transparent;
+	}
+	.parentBox {
+	display: none;	
+	}
+	h1, h2, h3, p {
+		color: black;
 	}
 }
 
