@@ -1,10 +1,14 @@
 .parentBox{
 width: 100vw;
+height: 100vh;
 display: flex;
 flex-wrap: wrap;
 z-index: -1;
 position: absolute;
+}
 
+.parentBox:nth-child(n){
+	gap: 0px;
 }
 .box{
 background-color: white;
@@ -12,12 +16,15 @@ height: 10vh;
 flex: 1;
 flex-shrink: 1;
 flex-basis: 10vw;
+gap: 0px;
+row-gap: 0px;
+column-gap: 0px;
 
 }
 body {
 	z-index: 0;
 	position: relative;
-	background-color: rgb(0, 0, 0);
+	/* background-color: rgb(0, 0, 0); */
 	mix-blend-mode: difference;
 
  /* FLEXBOX TOP RIGHT */
@@ -170,6 +177,11 @@ header {
 	font-variation-settings: "opsz" 1;
 }
 
+h1, h2, h3, p {
+	mix-blend-mode: difference;
+	color: white;
+}
+
 h1 {
 	font-size: 6rem;
 	margin-bottom: 1.5rem;
@@ -197,12 +209,13 @@ h3 {
 }
 
 p {
-	/* color: rgb(255, 255, 255); */
 	margin-bottom: 1.5rem;
 	font-size: 1.25rem;
-	mix-blend-mode: difference;/* text-shadow: 1px 1px 1px rgb(255, 255, 255);  */
-	color: white;
 
+}
+
+.last-article {
+	background-color: white;
 }
 
 .article-title {
@@ -221,13 +234,13 @@ footer {
 	max-width: 600px;
 	display: flex;
 	justify-content: space-between;
+	background-color: white;
 }
 
 /* MEDIA QUERIES */
 
 /* ALL RULES THAT APPLY WHEN SCREEN IS LARGER THAN 1050PX */
-/* if it's smaller than the amount of pixels then we will apply changes */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1050px) {
 	#design {
 		font-size: 12rem;
 		margin-bottom: -1.5rem;
@@ -249,5 +262,62 @@ footer {
 		justify-content: center;
 	}
 }
+
+/* ALL RULES THAT APPLY WHEN SCREEN IS SMALLER THAN 1050 PX */
+@media screen and (max-width: 1050px) {
+	.title {
+		display: flex;
+	}
+	h2 {
+		font-size: 3.5rem;
+	}
+	.flexboxes {
+		display: none;
+	}
+}
+
+/* WHEN SCREEN IS SMALLER THAN 700 PX */
+@media screen and (max-width: 700px) {
+	h1 {
+		font-size: 6rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	.body {
+		padding: 10%;
+	}
+	footer {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+/* WHEN SCREEN IS SMALLER THAN 530 PX */
+@media screen and (max-width: 530px) {
+	h1 {
+		font-size: 4rem;
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* WHEN SCREEN IS SMALLER THAN 400 PX */
+@media screen and (max-width: 400px) {
+	.title {
+		display: block;
+		margin-bottom: 0;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+	h1 {
+		margin-bottom: 0;
+	}
+}
+
 
 
