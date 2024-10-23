@@ -1,15 +1,17 @@
 .parentBox{
 width: 100vw;
 display: flex;
-flex-wrap:wrap;
+flex-wrap: wrap;
 z-index: -1;
 position: absolute;
 
 }
 .box{
-background-color: rgb(255, 255, 255);
-height: 10vw;
-width: 10vw;
+background-color: white;
+height: 10vh;
+flex: 1;
+flex-shrink: 1;
+flex-basis: 10vw;
 
 }
 body {
@@ -18,6 +20,7 @@ body {
 	background-color: rgb(0, 0, 0);
 	mix-blend-mode: difference;
 
+ /* FLEXBOX TOP RIGHT */
 }
 .parentBox :nth-child(8){
 	background-color: black;
@@ -37,15 +40,22 @@ body {
 .parentBox :nth-child(30){
 	background-color: black;
 }
-.parentBox :nth-child(40){
-	background-color: black;
-}
+
+/* FLEXBOX MIDDLE LEFT */
 .parentBox :nth-child(41){
 	background-color: black;
 }
-.parentBox :nth-child(50){
+.parentBox :nth-child(51){
 	background-color: black;
 }
+.parentBox :nth-child(61){
+	background-color: black;
+}
+.parentBox :nth-child(62){
+	background-color: black;
+}
+
+
 .parentBox :nth-child(101){
 	background-color: black;
 }
@@ -67,10 +77,11 @@ body {
 .parentBox :nth-child(111){
 	background-color: black;
 }
+
+
 .parentBox :nth-child(120){
 	background-color: black;
 }
-
 .parentBox :nth-child(121){
 	background-color: black;
 }
