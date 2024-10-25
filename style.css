@@ -11,10 +11,11 @@ z-index: -1;
 position: absolute;
 }
 
-.parentBox:nth-child(n) {
+/* .parentBox:nth-child(n) {
 	gap: 0px;
-}
-.box{
+} */
+
+.box {
 background-color: white;
 height: 10vh;
 flex: 1;
@@ -25,62 +26,116 @@ row-gap: 0px;
 column-gap: 0px;
 }
 
+/* CHANGE COLOR FROM BLACK TO WHITE */
+@keyframes changeColor {
+	0% {background-color: black;}
+	100% {background-color: white;}
+}
+
+/* FLEXBOX TOP LEFT */
+.parentBox :nth-child(1){
+	background-color: black;
+	animation: changeColor 1s infinite;
+	animation-delay: 1s;
+}
+
+.parentBox :nth-child(2){
+	background-color: black;
+	animation: changeColor 2s infinite;
+	animation-delay: 2s;
+}
+.parentBox :nth-child(11){
+	background-color: black;
+	animation: changeColor 4s infinite;
+	animation-delay: 4s;
+}
+.parentBox :nth-child(12){
+	background-color: black;
+	animation: changeColor 5s infinite;
+	animation-delay: 5s;
+}
+.parentBox :nth-child(22){
+	background-color: black;
+	animation: changeColor 6s infinite;
+	animation-delay: 6s;
+}
+.parentBox :nth-child(31){
+	background-color: black;
+	animation: changeColor 1s infinite;
+	animation-delay: 1s;
+}
+
 /* FLEXBOX TOP RIGHT */
 .parentBox :nth-child(8){
 	background-color: black;
-	animation: changeColor 1.5s infinite;
+	animation: changeColor 1s infinite;
+	animation-delay: 1s;
 }
 
-@keyframes changeColor {
-    0% {background-color: black;}
-    100% {background-color: white;}
-}
 .parentBox :nth-child(9){
 	background-color: black;
+	animation: changeColor 2s infinite;
+	animation-delay: 2s;
 }
 .parentBox :nth-child(10){
 	background-color: black;
+	animation: changeColor 3s infinite;
+	animation-delay: 3s;
 }
 .parentBox :nth-child(19){
 	background-color: black;
+	animation: changeColor 4s infinite;
+	animation-delay: 4s;
 }
 .parentBox :nth-child(20){
 	background-color: black;
+	animation: changeColor 5s infinite;
+	animation-delay: 5s;
 }
 .parentBox :nth-child(30){
 	background-color: black;
+	animation: changeColor 6s infinite;
+	animation-delay: 6s;
 }
 
 /* FLEXBOX MIDDLE LEFT */
 .parentBox :nth-child(41){
 	background-color: black;
+	animation: changeColor 1s infinite;
+	animation-delay: 1s;
 }
 .parentBox :nth-child(51){
 	background-color: black;
+	animation: changeColor 2s infinite;
+	animation-delay: 2s;
 }
 .parentBox :nth-child(61){
 	background-color: black;
+	animation: changeColor 3s infinite;
+	animation-delay: 3s;
 }
 .parentBox :nth-child(62){
 	background-color: black;
+	animation: changeColor 4s infinite;
+	animation-delay: 4s;
 }
 
 
-.parentBox :nth-child(101){
+/* .parentBox :nth-child(97){
 	background-color: black;
-}
+} */
 .parentBox :nth-child(99){
-	background-color: black;
-}
-.parentBox :nth-child(97){
 	background-color: black;
 }
 .parentBox :nth-child(100){
 	background-color: black;
 }
-.parentBox :nth-child(108){
+.parentBox :nth-child(101){
 	background-color: black;
 }
+/* .parentBox :nth-child(108){
+	background-color: black;
+} */
 .parentBox :nth-child(110){
 	background-color: black;
 }
@@ -116,15 +171,15 @@ column-gap: 0px;
 
 /* FLEXBOX FOR SECOND ARTICLE */
 
-.parentBox :nth-child(218){
+/* .parentBox :nth-child(218){
 	background-color: black;
-}
+} */
 .parentBox :nth-child(219){
 	background-color: black;
 }
-.parentBox :nth-child(227){
+/* .parentBox :nth-child(227){
 	background-color: black;
-}
+} */
 .parentBox :nth-child(230){
 	background-color: black;
 }
@@ -161,10 +216,10 @@ column-gap: 0px;
 .parentBox :nth-child(370){
 	background-color: black;
 }
-.parentBox :nth-child(380){
+/* .parentBox :nth-child(378){
 	background-color: black;
-}
-.parentBox :nth-child(378){
+} */
+.parentBox :nth-child(380){
 	background-color: black;
 }
 
@@ -220,6 +275,7 @@ header {
 	font-family: "salo-variable";
 	font-variation-settings: "opsz" 1;
 }
+
 
 h1, h2, h3, p {
 	mix-blend-mode: difference;
@@ -310,7 +366,7 @@ footer {
 	h2 {
 		font-size: 3.5rem;
 	}
-	.flexboxes {
+	.parentBox {
 		display: none;
 	}
 }
