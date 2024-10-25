@@ -23,12 +23,17 @@ flex-basis: 10vw;
 gap: 0px;
 row-gap: 0px;
 column-gap: 0px;
-
 }
 
 /* FLEXBOX TOP RIGHT */
 .parentBox :nth-child(8){
 	background-color: black;
+	animation: changeColor 1.5s infinite;
+}
+
+@keyframes changeColor {
+    0% {background-color: black;}
+    100% {background-color: white;}
 }
 .parentBox :nth-child(9){
 	background-color: black;
