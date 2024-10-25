@@ -174,16 +174,21 @@ column-gap: 0px;
 
 /* NAVBARS */
 
-.sticky1, .sticky2 {
+.sticky1, .sticky2 ,.sticky3,.sticky4,.sticky5{
 	background-color: black;
 	height: 10vh;
 	position: sticky;
 	top: 0;
+	margin-bottom: 1.5rem;
+	margin-top:  3rem;
 	z-index: 1000;
 	color: white;
 	display: flex;
     justify-content: center;
     align-items: center;
+	font-family: "Pixelify Sans", serif;
+	font-size: 2rem;
+	text-transform: uppercase;
 }
 
 /* .desktop-nav-bar {
