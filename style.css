@@ -1,3 +1,12 @@
+.sticky1, .sticky2 {
+	background-color: black;
+	height: 10vh;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	color: white;
+}
+
 body {
 	background-color: white;
 }
@@ -174,7 +183,7 @@ column-gap: 0px;
 
 /* NAVBARS */
 
-.desktop-nav-bar {
+/* .desktop-nav-bar {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 1rem;
@@ -190,7 +199,7 @@ column-gap: 0px;
 	font-size: 1rem;
 	margin-bottom: 1rem;
 	display: none;
-}
+} */
 
 /* HEADER AND PARAGRAPHS */
 
