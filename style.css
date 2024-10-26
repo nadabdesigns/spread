@@ -240,7 +240,7 @@ column-gap: 0px;
 	position: sticky;
 	top: 0;
 	margin-bottom: 1.5rem;
-	margin-top:  3rem;
+	margin-top: 3.5rem;
 	z-index: 1000;
 	color: white;
 	display: flex;
@@ -250,6 +250,55 @@ column-gap: 0px;
 	font-size: 2rem;
 	text-transform: uppercase;
 }
+.flex-grid {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+	
+}
+/* NEWNAVBARS */
+.newNav, .sideNav {
+	background-color: black;
+	height: 10vh;
+	width: fit-content;
+	position: sticky;
+	top: 0;
+	margin-bottom: 1.5rem;
+	margin-top: 3.5rem;
+	z-index: 1000;
+	color: white;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	font-family: "Pixelify Sans", serif;
+	font-size: 2rem;
+	text-transform: uppercase;
+	flex-grow: 2
+}
+.newFlex {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    text-align:center;
+	flex-grow: 2;
+	.newNav{
+ display: flex;
+ flex-grow: 2;
+
+	}
+}
+/* Edit Side Nav Grids */
+.sideNav {
+
+
+	display: grid;
+
+		grid-template-columns: 33.33%,33.33%,33.33%,;
+		grid-template-rows:  33.33%,33.33%,33.33%,;
+	
+
+}
+
 
 /* .desktop-nav-bar {
 	display: flex;
@@ -393,6 +442,7 @@ footer {
 	h1, h2, h3, p {
 		color: rgb(255, 255, 255);
 	}
+	
 }
 
 /* WHEN SCREEN IS SMALLER THAN 530 PX */
@@ -413,6 +463,10 @@ footer {
 	}
 	.desktop-nav-bar {
 		display: none;
+	}
+	/* fix rag on mobile */
+	p {
+		line-height: 1.4;
 	}
 	
 }
