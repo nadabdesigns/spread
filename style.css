@@ -47,7 +47,6 @@ column-gap: 0px;
 	background-color: black;
 	animation: var(--animation-1s-delay)
 }
-
 .parentBox :nth-child(2){
 	background-color: black;
 	animation: var(--animation-2s-delay)
@@ -59,176 +58,169 @@ column-gap: 0px;
 }
 .parentBox :nth-child(12){
 	background-color: black;
-	animation: changeColor 5s infinite;
-	animation-delay: 5s;
+	animation: var(--animation-1s-delay)
 }
 .parentBox :nth-child(22){
 	background-color: black;
-	animation: changeColor 6s infinite;
-	animation-delay: 6s;
+	animation: var(--animation-2s-delay)
 }
 .parentBox :nth-child(31){
 	background-color: black;
-	animation: changeColor 1s infinite;
-	animation-delay: 1s;
+	animation: var(--animation-3s-delay)
 }
 
 /* FLEXBOX TOP RIGHT */
 .parentBox :nth-child(8){
 	background-color: black;
-	animation: changeColor 1s infinite;
-	animation-delay: 1s;
+	animation: var(--animation-1s-delay)
 }
-
 .parentBox :nth-child(9){
 	background-color: black;
-	animation: changeColor 2s infinite;
-	animation-delay: 2s;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(10){
 	background-color: black;
-	animation: changeColor 3s infinite;
-	animation-delay: 3s;
+	animation: var(--animation-2s-delay)
 }
 .parentBox :nth-child(19){
 	background-color: black;
-	animation: changeColor 4s infinite;
-	animation-delay: 4s;
+	animation: var(--animation-1s-delay)
 }
 .parentBox :nth-child(20){
 	background-color: black;
-	animation: changeColor 5s infinite;
-	animation-delay: 5s;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(30){
 	background-color: black;
-	animation: changeColor 6s infinite;
-	animation-delay: 6s;
+	animation: var(--animation-1s-delay)
 }
 
 /* FLEXBOX MIDDLE LEFT */
 .parentBox :nth-child(41){
 	background-color: black;
-	animation: changeColor 1s infinite;
-	animation-delay: 1s;
+	animation: var(--animation-1s-delay)
 }
 .parentBox :nth-child(51){
 	background-color: black;
-	animation: changeColor 2s infinite;
-	animation-delay: 2s;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(61){
 	background-color: black;
-	animation: changeColor 3s infinite;
-	animation-delay: 3s;
+	animation: var(--animation-2s-delay)
 }
 .parentBox :nth-child(62){
 	background-color: black;
-	animation: changeColor 4s infinite;
-	animation-delay: 4s;
+	animation: var(--animation-3s-delay)
 }
 
-
-/* .parentBox :nth-child(97){
-	background-color: black;
-} */
+/* FLEXBOX MIDDLE INTRODUCTION */
 .parentBox :nth-child(99){
 	background-color: black;
+	animation: var(--animation-1s-delay)
 }
 .parentBox :nth-child(100){
 	background-color: black;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(101){
 	background-color: black;
+	animation: var(--animation-2s-delay)
 }
-/* .parentBox :nth-child(108){
-	background-color: black;
-} */
 .parentBox :nth-child(110){
 	background-color: black;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(111){
 	background-color: black;
+	animation: var(--animation-1s-delay)
 }
-
-
 .parentBox :nth-child(120){
 	background-color: black;
+	animation: var(--animation-2s-delay)
 }
 .parentBox :nth-child(121){
 	background-color: black;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(131){
 	background-color: black;
+	animation: var(--animation-2s-delay)
 }
 .parentBox :nth-child(130){
 	background-color: black;
+	animation: var(--animation-1s-delay)
 }
 .parentBox :nth-child(140){
 	background-color: black;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(149){
 	background-color: black;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(150){
 	background-color: black;
+	animation: var(--animation-2s-delay)
 }
 .parentBox :nth-child(151){
 	background-color: black;
+	animation: var(--animation-1s-delay)
 }
-
-/* FLEXBOX FOR SECOND ARTICLE */
-
-/* .parentBox :nth-child(218){
-	background-color: black;
-} */
 .parentBox :nth-child(219){
 	background-color: black;
+	animation: var(--animation-2s-delay)
 }
-/* .parentBox :nth-child(227){
-	background-color: black;
-} */
 .parentBox :nth-child(230){
 	background-color: black;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(330){
 	background-color: black;
+	animation: var(--animation-2s-delay)
 }
 .parentBox :nth-child(331){
 	background-color: black;
+	animation: var(--animation-1s-delay)
 }
 .parentBox :nth-child(341){
 	background-color: black;
+	animation: var(--animation-2s-delay)
 }
 .parentBox :nth-child(342){
 	background-color: black;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(351){
 	background-color: black;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(352){
 	background-color: black;
+	animation: var(--animation-2s-delay)
 }
 .parentBox :nth-child(361){
 	background-color: black;
+	animation: var(--animation-1s-delay)
 }
 .parentBox :nth-child(350){
 	background-color: black;
+	animation: var(--animation-2s-delay)
 }
 .parentBox :nth-child(360){
 	background-color: black;
+	animation: var(--animation-1s-delay)
 }
 .parentBox :nth-child(369){
 	background-color: black;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(370){
 	background-color: black;
+	animation: var(--animation-2s-delay)
 }
-/* .parentBox :nth-child(378){
-	background-color: black;
-} */
 .parentBox :nth-child(380){
 	background-color: black;
+	animation: var(--animation-3s-delay)
 }
 
 .body {
@@ -382,37 +374,18 @@ footer {
 		background-color: white;
 		animation: none;
 	}
-	.parentBox :nth-child(1){
-		background-color: black;
-	}
-	.parentBox :nth-child(2){
-		background-color: black;
-	}
-	.parentBox :nth-child(11){
-		background-color: black;
-	}
-	.parentBox :nth-child(8){
-		background-color: black;
-	}
-	.parentBox :nth-child(9){
-		background-color: black;
-	}
-	.parentBox :nth-child(10){
-		background-color: black;
-	}
-	.parentBox :nth-child(19){
-		background-color: black;
-	}
-	.parentBox :nth-child(20){
-		background-color: black;
-	}
-	.parentBox :nth-child(21){
-		background-color: black;
-	}
-	.parentBox :nth-child(30){
-		background-color: black;
-	}
-	.parentBox :nth-child(31){
+	.parentBox :nth-child(1),
+	.parentBox :nth-child(2),
+	.parentBox :nth-child(8),
+	.parentBox :nth-child(9),
+	.parentBox :nth-child(10),
+	.parentBox :nth-child(19),
+	.parentBox :nth-child(20),
+	.parentBox :nth-child(11),
+	.parentBox :nth-child(31),
+	.parentBox :nth-child(41),
+	.parentBox :nth-child(51),
+	.parentBox :nth-child(61) {
 		background-color: black;
 	}
 }
