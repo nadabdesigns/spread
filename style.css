@@ -32,22 +32,30 @@ column-gap: 0px;
 	100% {background-color: white;}
 }
 
+/* ROOT ANIMATION SHORTHAND */
+:root {
+	--animation-1s-delay: changeColor 2s ease-in-out 1s infinite alternate;
+	--animation-2s-delay: changeColor 2s ease-in-out 2s infinite alternate;
+	--animation-3s-delay: changeColor 2s ease-in-out 3s infinite alternate;
+
+	/*            changeColor 2s       ease-in-out     3s    infinite        alternate; */
+	/* animation: name        duration timing-function delay iteration-count direction fill-mode; */
+}
+
 /* FLEXBOX TOP LEFT */
 .parentBox :nth-child(1){
 	background-color: black;
-	animation: changeColor 1s infinite;
-	animation-delay: 1s;
+	animation: var(--animation-1s-delay)
 }
 
 .parentBox :nth-child(2){
 	background-color: black;
-	animation: changeColor 2s infinite;
-	animation-delay: 2s;
+	animation: var(--animation-2s-delay)
+
 }
 .parentBox :nth-child(11){
 	background-color: black;
-	animation: changeColor 4s infinite;
-	animation-delay: 4s;
+	animation: var(--animation-3s-delay)
 }
 .parentBox :nth-child(12){
 	background-color: black;
@@ -295,28 +303,8 @@ column-gap: 0px;
 
 		grid-template-columns: 33.33%,33.33%,33.33%,;
 		grid-template-rows:  33.33%,33.33%,33.33%,;
-	
-
 }
 
-
-/* .desktop-nav-bar {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 1rem;
-}
-
-.mobile-nav-bar {
-	display: flex;
-	flex-direction: column;
-	background-color: black;
-	color: white;
-	padding: 1rem;
-	width: 100%;
-	font-size: 1rem;
-	margin-bottom: 1rem;
-	display: none;
-} */
 
 /* HEADER AND PARAGRAPHS */
 
@@ -337,18 +325,20 @@ h1 {
 	line-height: normal;
 }
 
+#design {
+	font-size: 12rem;
+	margin-bottom: -1.5rem;
+}
+#thinking {
+	font-size: 11rem;
+	padding-left: 9rem;
+	margin-bottom: 1.5rem;
+}
+
 h2 {
-	font-size: 1.9rem;
+	font-size: 3.6rem;
 	margin-bottom: 1rem;
 	line-height: normal;
-}
-
-h2 {
-	font-size: 2rem;
-}
-
-.author {
-	font-size: 1.4rem;
 }
 
 h3 {
@@ -356,10 +346,13 @@ h3 {
 	margin-bottom: 2rem;
 }
 
+.author {
+	font-size: 2rem;
+}
+
 p {
 	margin-bottom: 1.5rem;
 	font-size: 1.25rem;
-
 }
 
 .article-title {
@@ -383,80 +376,91 @@ footer {
 
 /* MEDIA QUERIES */
 
-/* ALL RULES THAT APPLY WHEN SCREEN IS LARGER THAN 1050PX */
-@media screen and (min-width: 1050px) {
-	#design {
-		font-size: 12rem;
-		margin-bottom: -1.5rem;
-	}
-	#thinking {
-		font-size: 11rem;
-		padding-left: 9rem;
-		margin-bottom: 1.5rem;
-	}
-	h2 {
-		font-size: 3.6rem;
-		margin-bottom: 0.5rem;
-	}
-	h3 {
-		font-size: 1.4rem;
-	}
-	header {
-		/* display: flex; */
-		justify-content: center;
-	}
-}
-
 /* ALL RULES THAT APPLY WHEN SCREEN IS SMALLER THAN 1050 PX */
 @media screen and (max-width: 1050px) {
-	.title {
-		display: flex;
+	.parentBox :nth-child(n) {
+		background-color: white;
+		animation: none;
 	}
-	h2 {
-		font-size: 3.5rem;
+	.parentBox :nth-child(1){
+		background-color: black;
 	}
-	.parentBox {
-		display: none;
+	.parentBox :nth-child(2){
+		background-color: black;
+	}
+	.parentBox :nth-child(11){
+		background-color: black;
+	}
+	.parentBox :nth-child(8){
+		background-color: black;
+	}
+	.parentBox :nth-child(9){
+		background-color: black;
+	}
+	.parentBox :nth-child(10){
+		background-color: black;
+	}
+	.parentBox :nth-child(19){
+		background-color: black;
+	}
+	.parentBox :nth-child(20){
+		background-color: black;
+	}
+	.parentBox :nth-child(21){
+		background-color: black;
+	}
+	.parentBox :nth-child(30){
+		background-color: black;
+	}
+	.parentBox :nth-child(31){
+		background-color: black;
 	}
 }
 
-/* WHEN SCREEN IS SMALLER THAN 700 PX */
-@media screen and (max-width: 700px) {
-	h1 {
-		font-size: 6rem;
+/* WHEN SCREEN IS SMALLER THAN 600 PX */
+@media screen and (max-width: 600px) {
+	.body {
+		padding: 5%;
+	}
+	#design {
+		font-size: 10rem;
+	}
+	#thinking {
+		font-size: 9rem;
+		padding-left: 7.5rem;
 	}
 	h2 {
 		font-size: 3rem;
 	}
-	.body {
-		padding: 10%;
+	.author {
+		font-size: 1.5rem;
+	}
+	h1, h2, h3, p {
+		color: white;
 	}
 	footer {
 		padding-left: 10%;
 		padding-right: 10%;
 		background-color: transparent;
 	}
-	.parentBox {
-		display: none;	
-	}
-	h1, h2, h3, p {
-		color: rgb(255, 255, 255);
-	}
-	
 }
 
 /* WHEN SCREEN IS SMALLER THAN 530 PX */
 @media screen and (max-width: 530px) {
-	h1 {
-		font-size: 4rem;
+	#design {
+		font-size: 9rem;
+	}
+	#thinking {
+		font-size: 8rem;
+		padding-left: 6.5rem;
+	}
+	h2 {
+		font-size: 2.5rem;
 	}
 	footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-	.parentBox {
-		display: none;
 	}
 	.mobile-nav-bar {
 		display: flex;
@@ -471,17 +475,40 @@ footer {
 	
 }
 
-/* WHEN SCREEN IS SMALLER THAN 400 PX */
-@media screen and (max-width: 400px) {
+/* WHEN SCREEN IS SMALLER THAN 530 PX */
+@media screen and (max-width: 530px) {
 	.title {
-		display: block;
-		margin-bottom: 0;
+		margin-top: 3rem;
+	}
+	#thinking {
+		padding-left: 3.5rem;
 	}
 	h2 {
-		font-size: 1.5rem;
+		font-size: 2.4rem;
 	}
-	h1 {
-		margin-bottom: 0;
+}
+
+/* WHEN SCREEN IS SMALLER THAN 400 PX */
+@media screen and (max-width: 400px) {
+	#design {
+		font-size: 10rem;
+	}
+	#thinking {
+		font-size: 8rem;
+		padding-left: 0rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+}
+
+/* WHEN SCREEN IS SMALLER THAN 400 PX */
+@media screen and (max-width: 350px) {
+	#design, #thinking {
+		font-size: 5rem;
+	}
+	#thinking {
+		margin-top: 1rem;
 	}
 }
 
