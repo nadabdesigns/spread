@@ -544,7 +544,15 @@ column-gap: 0px;
 	
 }
 /* NEWNAVBARS */
-.newNav, .sideNav {
+.menu-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align:center;
+	flex-grow: 2;
+}
+
+.menu-name, .left-nav, .right-nav {
 	background-color: black;
 	height: 10vh;
 	width: fit-content;
@@ -562,28 +570,28 @@ column-gap: 0px;
 	text-transform: uppercase;
 	flex-grow: 2
 }
-.newFlex {
-    display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-    text-align:center;
+
+.menu-name {
+	display: flex;
 	flex-grow: 2;
-	.newNav{
- display: flex;
- flex-grow: 2;
-
-	}
+	align-items: center;
 }
-/* Edit Side Nav Grids */
-.sideNav {
 
-
+.left-nav, .right-nav {
 	display: grid;
-
-		grid-template-columns: 33.33%,33.33%,33.33%,;
-		grid-template-rows:  33.33%,33.33%,33.33%,;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows:  1fr 1fr 1fr;
 }
-
+.nav-div {
+	width: 100%;
+	height: 100%;
+}
+.left-nav > div:nth-child(3), :nth-child(4), :nth-child(8){
+	background-color: white;
+}
+.right-nav > div:nth-child(3), :nth-child(4), :nth-child(8){
+	background-color: white;
+}
 
 /* HEADER AND PARAGRAPHS */
 
