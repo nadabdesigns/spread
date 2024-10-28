@@ -674,11 +674,7 @@ footer {
 	.parentBox :nth-child(11),
 	.parentBox :nth-child(19),
 	.parentBox :nth-child(20),
-	.parentBox :nth-child(30),
-	.parentBox :nth-child(31),
-	.parentBox :nth-child(41),
-	.parentBox :nth-child(51),
-	.parentBox :nth-child(61) {
+	.parentBox :nth-child(30) {
 		background-color: black;
 	}
 	label {
