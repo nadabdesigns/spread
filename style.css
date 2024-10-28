@@ -20,15 +20,27 @@ body {
   }
 
 label {
-	padding: 10px 20px;
+	font-size: 1.25rem;
+	padding: 1rem 2rem;
 	background-color: black;
 	color: white;
-	border-radius: 5px;
 	cursor: pointer;
 	text-align: center;
-	display: inline-block;
-	margin-bottom: 20px;
+
+	position: fixed; 
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 10; 
 }
+
+#toggleAnimation:checked + label::after {
+	content: "Start Animation"; 
+}
+  
+#toggleAnimation:not(:checked) + label::after {
+	content: "Stop Animation"; 
+}
+  
 
 .parentBox {
 width: 100vw;
@@ -38,7 +50,6 @@ flex-wrap: wrap;
 z-index: -1;
 position: absolute;
 }
-
 
 .box {
 background-color: white;
@@ -612,6 +623,9 @@ footer {
 	.parentBox :nth-child(51),
 	.parentBox :nth-child(61) {
 		background-color: black;
+	}
+	label {
+		display: none;
 	}
 }
 
