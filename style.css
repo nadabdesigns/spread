@@ -375,6 +375,10 @@ column-gap: 0px;
 	background-color: black;
 	animation: var(--animation-2s-delay)
 }
+.parentBox :nth-child(422){
+	background-color: black;
+	animation: var(--animation-2s-delay)
+}
 .parentBox :nth-child(419){
 	background-color: black;
 	animation: var(--animation-3s-delay)
@@ -394,6 +398,10 @@ column-gap: 0px;
 .parentBox :nth-child(441){
 	background-color: black;
 	animation: var(--animation-1s-delay)
+}
+.parentBox :nth-child(442){
+	background-color: black;
+	animation: var(--animation-2s-delay)
 }
 .parentBox :nth-child(450){
 	background-color: black;
@@ -452,17 +460,65 @@ column-gap: 0px;
 }
 .parentBox :nth-child(560){
 	background-color: black;
+	animation: var(--animation-1s-delay)
+}
+.parentBox :nth-child(570){
+	background-color: black;
+	animation: var(--animation-1s-delay)
+}
+.parentBox :nth-child(580){
+	background-color: black;
 	animation: var(--animation-2s-delay)
 }
-
-/* FOOTER FLEXBOX */
-.parentBox :nth-child(570),
-.parentBox :nth-child(561),
-.parentBox :nth-child(571)
-{
+.parentBox :nth-child(591){
 	background-color: black;
-	animation: none;
+	animation: var(--animation-3s-delay)
 }
+.parentBox :nth-child(600){
+	background-color: black;
+	animation: var(--animation-2s-delay)
+}
+.parentBox :nth-child(601){
+	background-color: black;
+	animation: var(--animation-1s-delay)
+}
+.parentBox :nth-child(610){
+	background-color: black;
+	animation: var(--animation-2s-delay)
+}
+.parentBox :nth-child(611){
+	background-color: black;
+	animation: var(--animation-3s-delay)
+}
+.parentBox :nth-child(622){
+	background-color: black;
+	animation: var(--animation-2s-delay)
+}
+.parentBox :nth-child(620){
+	background-color: black;
+	animation: var(--animation-1s-delay)
+}
+.parentBox :nth-child(619){
+	background-color: black;
+	animation: var(--animation-2s-delay)
+}
+.parentBox :nth-child(631){
+	background-color: black;
+	animation: var(--animation-3s-delay)
+}
+.parentBox :nth-child(640){
+	background-color: black;
+	animation: var(--animation-1s-delay)
+}
+.parentBox :nth-child(650){
+	background-color: black;
+	animation: var(--animation-2s-delay)
+}
+.parentBox :nth-child(660){ /* last div */
+	background-color: black;
+	animation: var(--animation-3s-delay)
+}
+
 /* NAVBARS */
 
 .sticky1, .sticky2 ,.sticky3,.sticky4,.sticky5{
@@ -605,6 +661,7 @@ footer {
 	/* make all boxes white then target specific ones to be black */
 	/* this is because we dont boxes to be overlapping with text as the screen gets smaller */
 	/* prob a better way to do this, might revisit later */
+
 	.parentBox :nth-child(n) {
 		background-color: white;
 		animation: none;
@@ -626,6 +683,15 @@ footer {
 	}
 	label {
 		display: none;
+	}
+	.box {
+		height: 11vh;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.box {
+		height: 9vh;
 	}
 }
 
@@ -684,6 +750,9 @@ footer {
 	p {
 		line-height: 1.4;
 	}
+	.box {
+		height: 7vh;
+	}
 	
 }
 
@@ -712,6 +781,9 @@ footer {
 	h2 {
 		font-size: 2rem;
 	}
+	.box {
+		height: 6vh;
+	}
 }
 
 /* WHEN SCREEN IS SMALLER THAN 400 PX */
@@ -721,6 +793,9 @@ footer {
 	}
 	#thinking {
 		margin-top: 1rem;
+	}
+	.box {
+		height: 5vh;
 	}
 }
 
