@@ -42,27 +42,6 @@ label {
 	content: "Stop Animation";
 }
   
-/* FLEXBOX METHOD */
-/* .parentBox {
-width: 100vw;
-height: 100vh;
-display: flex;
-flex-wrap: wrap;
-z-index: -1;
-position: absolute;
-}
-
-.box {
-background-color: white;
-height: 10vh;
-flex: 1;
-flex-shrink: 1;
-flex-basis: 10vw;
-gap: 0px;
-row-gap: 0px;
-column-gap: 0px;
-} */
-
 /* CSS GRID METHOD */
 .parentBox {
 	display: grid;
