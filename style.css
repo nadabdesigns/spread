@@ -61,43 +61,6 @@ label {
 	aspect-ratio: 1/1;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
-.nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	background-color: black;
-	color: white;
-	padding-right: 3vh;
-	padding-left: 3vh;
-	padding-top: 2%;
-	padding-bottom: 2%;
-}
-.crumb{
-	padding: 0px 1%;
-	
-}
-
-.crumb:hover{
-background-color: white;
-color: black;
-
-
-}
-/* CHANGE COLOR FROM BLACK TO WHITE */
-@keyframes changeColor {
-	0% {
-		background-color: black;
-	}
-
-	100% {
-		background-color: white;
-	}
-}
-
 /* ROOT ANIMATION SHORTHAND */
 :root {
 	--animation-1s-delay: changeColor 2s ease-in-out 1s infinite alternate;
@@ -171,16 +134,24 @@ color: black;
 }
 
 /* FLEXBOX MIDDLE LEFT */
+
 .parentBox :nth-child(41) {
 	background-color: black;
 	animation: var(--animation-1s-delay)
 }
 
+.parentBox :nth-child(50) {
+	background-color: black;
+	animation: var(--animation-3s-delay)
+}
 .parentBox :nth-child(51) {
 	background-color: black;
 	animation: var(--animation-3s-delay)
 }
-
+.parentBox :nth-child(60) {
+	background-color: black;
+	animation: var(--animation-1s-delay)
+}
 .parentBox :nth-child(61) {
 	background-color: black;
 	animation: var(--animation-2s-delay)
@@ -189,6 +160,14 @@ color: black;
 .parentBox :nth-child(62) {
 	background-color: black;
 	animation: var(--animation-3s-delay)
+}
+.parentBox :nth-child(70) {
+	background-color: black;
+	animation: var(--animation-1s-delay)
+}
+.parentBox :nth-child(69) {
+	background-color: black;
+	animation: var(--animation-1s-delay)
 }
 
 /* INTRODUCTION FLEXBOX */
@@ -274,9 +253,17 @@ color: black;
 	animation: var(--animation-3s-delay)
 }
 
-.parentBox :nth-child(190) {
+.parentBox :nth-child(179) {
+	background-color: black;
+	animation: var(--animation-1s-delay)
+}
+.parentBox :nth-child(180) {
 	background-color: black;
 	animation: var(--animation-2s-delay)
+}
+.parentBox :nth-child(190) {
+	background-color: black;
+	animation: var(--animation-3s-delay)
 }
 
 .parentBox :nth-child(192) {
@@ -318,6 +305,10 @@ color: black;
 	background-color: black;
 	animation: var(--animation-2s-delay)
 }
+.parentBox :nth-child(242) {
+	background-color: black;
+	animation: var(--animation-1s-delay)
+}
 
 .parentBox :nth-child(250) {
 	background-color: black;
@@ -326,12 +317,12 @@ color: black;
 
 .parentBox :nth-child(251) {
 	background-color: black;
-	animation: var(--animation-2s-delay)
+	animation: var(--animation-3s-delay)
 }
 
 .parentBox :nth-child(260) {
 	background-color: black;
-	animation: var(--animation-1s-delay)
+	animation: var(--animation-2s-delay)
 }
 
 .parentBox :nth-child(261) {
@@ -358,17 +349,21 @@ color: black;
 
 .parentBox :nth-child(281) {
 	background-color: black;
+	animation: var(--animation-3s-delay)
+}
+.parentBox :nth-child(282) {
+	background-color: black;
 	animation: var(--animation-2s-delay)
 }
 
 .parentBox :nth-child(290) {
 	background-color: black;
-	animation: var(--animation-1s-delay)
+	animation: var(--animation-2s-delay)
 }
 
 .parentBox :nth-child(299) {
 	background-color: black;
-	animation: var(--animation-1s-delay)
+	animation: var(--animation-3s-delay)
 }
 
 .parentBox :nth-child(300) {
@@ -377,6 +372,10 @@ color: black;
 }
 
 .parentBox :nth-child(301) {
+	background-color: black;
+	animation: var(--animation-2s-delay)
+}
+.parentBox :nth-child(302) {
 	background-color: black;
 	animation: var(--animation-2s-delay)
 }
@@ -456,6 +455,10 @@ color: black;
 .parentBox :nth-child(401) {
 	background-color: black;
 	animation: var(--animation-2s-delay)
+}
+.parentBox :nth-child(409) {
+	background-color: black;
+	animation: var(--animation-1s-delay)
 }
 
 .parentBox :nth-child(411) {
@@ -646,10 +649,47 @@ color: black;
 	animation: var(--animation-3s-delay)
 }
 
-/* NAVBARS */
+/* TOP MENU NAV */
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: black;
+	color: white;
+	padding: 1rem;
+	font-family: "salo-variable";
+	font-variation-settings: "opsz" 1;
+	font-size: 1.25rem;
+}
+.crumb {
+	padding: 0px 1%;
+	
+}
+
+.crumb:hover {
+	background-color: white;
+	color: black;	
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* CHANGE COLOR FROM BLACK TO WHITE */
+@keyframes changeColor {
+	0% {
+		background-color: black;
+	}
+
+	100% {
+		background-color: white;
+	}
+}
+
+/* STICKY TITLES */
 
 .menu-container {
-
 	height: 10vh;
 	position: sticky;
 	top: 0;
@@ -675,9 +715,6 @@ color: black;
 
 }
 
-/* NEWNAVBARS */
-
-
 .menu-name,
 .left-nav,
 .right-nav {
@@ -686,7 +723,6 @@ color: black;
 	width: fit-content;
 	position: sticky;
 	margin-bottom: 1.5rem;
-	/* margin-top: 4rem; */
 	z-index: 1000;
 	color: white;
 	display: flex;
@@ -728,17 +764,12 @@ color: black;
 	background-color: white;
 }
 
-/* .right-nav > div:nth-child(3), :nth-child(4), :nth-child(8){ */
-/* background-color: white; */
-
-
 /* HEADER AND PARAGRAPHS */
 
 header {
 	font-family: "salo-variable";
 	font-variation-settings: "opsz" 1;
 }
-
 
 h1,
 h2,
@@ -790,11 +821,13 @@ p {
 	font-weight: bold;
 }
 
-blockquote {
-	font-size: 1.5rem;
+blockquote > p {
+	font-size: 2rem;
 	font-weight: 700;
 	text-align: center;
 	margin-bottom: 1rem;
+	font-family: "salo-variable";
+	font-variation-settings: "opsz" 1;
 }
 
 footer {
@@ -808,11 +841,6 @@ footer {
 
 /* ALL RULES THAT APPLY WHEN SCREEN IS SMALLER THAN 1050 PX */
 @media screen and (max-width: 1050px) {
-
-	/* make all boxes white then target specific ones to be black */
-	/* this is because we dont boxes to be overlapping with text as the screen gets smaller */
-	/* prob a better way to do this, might revisit later */
-
 	.parentBox :nth-child(n) {
 		background-color: white;
 		animation: none;
@@ -927,6 +955,9 @@ footer {
 	h2 {
 		font-size: 2.4rem;
 	}
+	.menu-name {
+		font-size: 1.25rem;
+	}
 }
 
 /* WHEN SCREEN IS SMALLER THAN 400 PX */
@@ -945,7 +976,7 @@ footer {
 	}
 }
 
-/* WHEN SCREEN IS SMALLER THAN 400 PX */
+/* WHEN SCREEN IS SMALLER THAN 350 PX */
 @media screen and (max-width: 350px) {
 
 	#design,
