@@ -690,6 +690,45 @@ html {
 	scroll-behavior: smooth;
 }
 
+ /* MOBILE NAV */
+ .mobile-nav-bar {
+	font-family: "Pixelify Sans", serif;
+	font-size: 1.25rem;
+	padding: 1rem;
+	background-color: black;
+	color: white;
+	overflow: hidden;
+	max-height: 67px;
+	transition: max-height 0.4s ease;
+	display: none;
+}
+
+.mobile-nav-bar li:hover {
+	background-color: white;
+	color: black;
+}
+
+.mobile-nav-bar[open] {
+	max-height: 300px;
+	transition: max-height 0.4s ease;
+}
+
+.arrow {
+	display: flex;
+	transition: transform 0.4s ease;
+	color: white;
+}
+.mobile-nav-bar[open] .arrow {
+	transform: rotate(180deg);
+}
+
+.mobile-nav-bar summary {
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center;
+	cursor: pointer; 
+  }
+
 /* CHANGE COLOR FROM BLACK TO WHITE */
 @keyframes changeColor {
 	0% {
@@ -887,9 +926,9 @@ footer {
 
 /* WHEN SCREEN IS SMALLER THAN 600 PX */
 @media screen and (max-width: 600px) {
-	.nav {
+	/* .nav {
 		flex-direction: column;
-	}
+	} */
 
 	.body {
 		padding: 5%;
@@ -922,13 +961,17 @@ footer {
 
 /* WHEN SCREEN IS SMALLER THAN 530 PX */
 @media screen and (max-width: 530px) {
+	.title {
+		margin-top: 3rem;
+	}
+
 	#design {
 		font-size: 9rem;
 	}
 
 	#thinking {
 		font-size: 8rem;
-		padding-left: 6.5rem;
+		padding-left: 3.5rem;
 	}
 
 	h2 {
@@ -944,33 +987,14 @@ footer {
 
 	.mobile-nav-bar {
 		display: flex;
+		flex-direction: column;
 	}
-
-	.desktop-nav-bar {
+	.nav {
 		display: none;
 	}
-
-	/* fix rag on mobile */
 	p {
 		line-height: 1.4;
 	}
-
-}
-
-/* WHEN SCREEN IS SMALLER THAN 530 PX */
-@media screen and (max-width: 530px) {
-	.title {
-		margin-top: 3rem;
-	}
-
-	#thinking {
-		padding-left: 3.5rem;
-	}
-
-	h2 {
-		font-size: 2.4rem;
-	}
-
 	.menu-name {
 		font-size: 1.25rem;
 	}
@@ -1034,7 +1058,7 @@ footer {
     /* this affects the margin in the printer settings */ 
     margin: 25mm 25mm 25mm 25mm;  
 } 
-.author{
+.author {
 	margin-bottom: 40%;
 }
 }
