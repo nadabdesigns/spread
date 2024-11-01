@@ -42,7 +42,7 @@ label {
 #toggleAnimation:not(:checked)+label::after {
 	content: "Stop Animation";
 }
-  
+
 /* CSS GRID METHOD */
 .parentBox {
 	display: grid;
@@ -54,7 +54,8 @@ label {
 	overflow: hidden;
 	z-index: -1;
 	position: absolute;
-}	
+}
+
 .box {
 	background-color: white;
 	height: 100%;
@@ -145,14 +146,17 @@ label {
 	background-color: black;
 	animation: var(--animation-3s-delay)
 }
+
 .parentBox :nth-child(51) {
 	background-color: black;
 	animation: var(--animation-3s-delay)
 }
+
 .parentBox :nth-child(60) {
 	background-color: black;
 	animation: var(--animation-1s-delay)
 }
+
 .parentBox :nth-child(61) {
 	background-color: black;
 	animation: var(--animation-2s-delay)
@@ -162,10 +166,12 @@ label {
 	background-color: black;
 	animation: var(--animation-3s-delay)
 }
+
 .parentBox :nth-child(70) {
 	background-color: black;
 	animation: var(--animation-1s-delay)
 }
+
 .parentBox :nth-child(69) {
 	background-color: black;
 	animation: var(--animation-1s-delay)
@@ -258,10 +264,12 @@ label {
 	background-color: black;
 	animation: var(--animation-1s-delay)
 }
+
 .parentBox :nth-child(180) {
 	background-color: black;
 	animation: var(--animation-2s-delay)
 }
+
 .parentBox :nth-child(190) {
 	background-color: black;
 	animation: var(--animation-3s-delay)
@@ -306,6 +314,7 @@ label {
 	background-color: black;
 	animation: var(--animation-2s-delay)
 }
+
 .parentBox :nth-child(242) {
 	background-color: black;
 	animation: var(--animation-1s-delay)
@@ -352,6 +361,7 @@ label {
 	background-color: black;
 	animation: var(--animation-3s-delay)
 }
+
 .parentBox :nth-child(282) {
 	background-color: black;
 	animation: var(--animation-2s-delay)
@@ -376,6 +386,7 @@ label {
 	background-color: black;
 	animation: var(--animation-2s-delay)
 }
+
 .parentBox :nth-child(302) {
 	background-color: black;
 	animation: var(--animation-2s-delay)
@@ -457,6 +468,7 @@ label {
 	background-color: black;
 	animation: var(--animation-2s-delay)
 }
+
 .parentBox :nth-child(409) {
 	background-color: black;
 	animation: var(--animation-1s-delay)
@@ -663,14 +675,15 @@ label {
 	font-variation-settings: "opsz" 1;
 	font-size: 1.25rem;
 }
+
 .crumb {
 	padding: 0px 1%;
-	
+
 }
 
 .crumb:hover {
 	background-color: white;
-	color: black;	
+	color: black;
 }
 
 html {
@@ -822,7 +835,7 @@ p {
 	font-weight: bold;
 }
 
-blockquote > p {
+blockquote>p {
 	font-size: 2rem;
 	font-weight: 700;
 	text-align: center;
@@ -866,6 +879,7 @@ footer {
 	label {
 		display: none;
 	}
+
 	.parentBox {
 		height: auto;
 	}
@@ -873,9 +887,10 @@ footer {
 
 /* WHEN SCREEN IS SMALLER THAN 600 PX */
 @media screen and (max-width: 600px) {
-	.nav{
+	.nav {
 		flex-direction: column;
 	}
+
 	.body {
 		padding: 5%;
 	}
@@ -939,7 +954,7 @@ footer {
 	p {
 		line-height: 1.4;
 	}
-	
+
 }
 
 /* WHEN SCREEN IS SMALLER THAN 530 PX */
@@ -955,6 +970,7 @@ footer {
 	h2 {
 		font-size: 2.4rem;
 	}
+
 	.menu-name {
 		font-size: 1.25rem;
 	}
@@ -989,5 +1005,36 @@ footer {
 	}
 }
 
+/* FOR PRINT */
 
 
+@media print {
+    h1, h2, h3, p {
+        color: black;
+        mix-blend-mode: normal;
+    }
+    .parentBox, .nav, label, .nopritnt {
+        display: none;
+    }
+    .menu-name {
+        color:black;
+    }
+    blockquote {
+        margin-top: 3rem;
+    }
+    footer {
+        padding: 0;
+    }
+	.body{
+		margin-top: 20%;
+	}
+	@page  { 
+    size: auto;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+    margin: 25mm 25mm 25mm 25mm;  
+} 
+.author{
+	margin-bottom: 40%;
+}
+}
